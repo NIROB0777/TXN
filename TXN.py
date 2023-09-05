@@ -60,7 +60,7 @@ def __init__(self):
         self.cp = []
         self.loop = 0
 #-----------UGEN---------#
- ugen2=('Mozilla/5.0 (iPhone; CPU iPhone OS 9_9_5; like Mac OS X) AppleWebKit/601.43 (KHTML, like Gecko)  Chrome/50.0.3510.293 Mobile Safari/534.2',
+ugen2=( 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36',
 'Mozilla/5.0 (Linux; Linux x86_64; en-US) AppleWebKit/603.12 (KHTML, like Gecko) Chrome/49.0.1384.377 Safari/534',
 'Mozilla/5.0 (Linux; U; Android 7.0; GT-I9300 Build/KTU84P) AppleWebKit/603.19 (KHTML, like Gecko)  Chrome/52.0.2561.267 Mobile Safari/603.6',
 'Mozilla/5.0 (Windows; Windows NT 10.1; WOW64) AppleWebKit/534.38 (KHTML, like Gecko) Chrome/52.0.3651.135 Safari/534',
@@ -243,7 +243,7 @@ def alhaj(uid,pwx,tl):
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.74 Mobile Safari/537.36',
+    'user-agent': pro,
     'viewport-width': '980',}
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
