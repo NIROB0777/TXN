@@ -59,6 +59,19 @@ def __init__(self):
         self.ok = []
         self.cp = []
         self.loop = 0
+#-----------UGEN---------#
+ ugen2=('Mozilla/5.0 (iPhone; CPU iPhone OS 9_9_5; like Mac OS X) AppleWebKit/601.43 (KHTML, like Gecko)  Chrome/50.0.3510.293 Mobile Safari/534.2',
+'Mozilla/5.0 (Linux; Linux x86_64; en-US) AppleWebKit/603.12 (KHTML, like Gecko) Chrome/49.0.1384.377 Safari/534',
+'Mozilla/5.0 (Linux; U; Android 7.0; GT-I9300 Build/KTU84P) AppleWebKit/603.19 (KHTML, like Gecko)  Chrome/52.0.2561.267 Mobile Safari/603.6',
+'Mozilla/5.0 (Windows; Windows NT 10.1; WOW64) AppleWebKit/534.38 (KHTML, like Gecko) Chrome/52.0.3651.135 Safari/534',
+'Mozilla/5.0 (Windows; U; Windows NT 10.3; Win64; x64; en-US) AppleWebKit/533.22 (KHTML, like Gecko) Chrome/53.0.2640.336 Safari/535.6 Edge/9.17781',
+'Mozilla/5.0 (Windows; U; Windows NT 10.4;) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/54.0.1340.256 Safari/602',
+'Mozilla/5.0 (Linux i683 x86_64) AppleWebKit/603.11 (KHTML, like Gecko) Chrome/52.0.2702.145 Safari/602',
+'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1;; en-US Trident/5.0)',
+'Mozilla/5.0 (Android; Android 5.0.2; LG-D335 Build/LRX22G) AppleWebKit/602.42 (KHTML, like Gecko)  Chrome/49.0.3375.152 Mobile Safari/537.6',
+'Mozilla/5.0 (Linux; U; Linux i672 x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2052.354 Safari/535',)
+ 
+        
 try:
  prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
  open('.prox.txt','w').write(prox)
@@ -137,17 +150,6 @@ logo = ("""
 \033[1;32m   [ GITHUB : NIROB0777
 \033[1;32m   [ FACEBOOK : TOYA X NIROB CYBER ZONE
 \033[1;91m╚══════════════════════════""")
- #-----------UGEN---------#
- ugen2=('Mozilla/5.0 (iPhone; CPU iPhone OS 9_9_5; like Mac OS X) AppleWebKit/601.43 (KHTML, like Gecko)  Chrome/50.0.3510.293 Mobile Safari/534.2',
-'Mozilla/5.0 (Linux; Linux x86_64; en-US) AppleWebKit/603.12 (KHTML, like Gecko) Chrome/49.0.1384.377 Safari/534',
-'Mozilla/5.0 (Linux; U; Android 7.0; GT-I9300 Build/KTU84P) AppleWebKit/603.19 (KHTML, like Gecko)  Chrome/52.0.2561.267 Mobile Safari/603.6',
-'Mozilla/5.0 (Windows; Windows NT 10.1; WOW64) AppleWebKit/534.38 (KHTML, like Gecko) Chrome/52.0.3651.135 Safari/534',
-'Mozilla/5.0 (Windows; U; Windows NT 10.3; Win64; x64; en-US) AppleWebKit/533.22 (KHTML, like Gecko) Chrome/53.0.2640.336 Safari/535.6 Edge/9.17781',
-'Mozilla/5.0 (Windows; U; Windows NT 10.4;) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/54.0.1340.256 Safari/602',
-'Mozilla/5.0 (Linux i683 x86_64) AppleWebKit/603.11 (KHTML, like Gecko) Chrome/52.0.2702.145 Safari/602',
-'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1;; en-US Trident/5.0)',
-'Mozilla/5.0 (Android; Android 5.0.2; LG-D335 Build/LRX22G) AppleWebKit/602.42 (KHTML, like Gecko)  Chrome/49.0.3375.152 Mobile Safari/537.6',
-'Mozilla/5.0 (Linux; U; Linux i672 x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2052.354 Safari/535',)
  
 # MAIN MANU 
 def Main():
